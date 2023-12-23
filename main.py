@@ -1,7 +1,7 @@
 import sys
 
 from ConfigLoader import loadConfig
-from Facebook.FacebookPages import FacebookPublisher
+from Facebook.FacebookPublisher import FacebookPublisher
 from ProductUpdater import ProductUpdater
 
 if __name__ == '__main__':

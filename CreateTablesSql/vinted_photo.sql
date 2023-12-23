@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
- SET NAMES utf8 ;
+SET NAMES utf8;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,16 +21,18 @@
 
 DROP TABLE IF EXISTS `photo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `photo` (
-  `id_photo` int(255) NOT NULL AUTO_INCREMENT,
-  `id_product` int(255) DEFAULT NULL,
-  `id_vinted_photo` varchar(255) NOT NULL,
-  `full_size_url` varchar(255) DEFAULT NULL,
-  `url` varchar(255) DEFAULT NULL,
-  `is_main` int(1) DEFAULT NULL,
-  `is_hidden` int(1) DEFAULT NULL,
-  PRIMARY KEY (`id_photo`)
+SET
+character_set_client = utf8mb4 ;
+CREATE TABLE `photo`
+(
+    `id_photo`        int(255) NOT NULL AUTO_INCREMENT,
+    `id_product`      int(255) DEFAULT NULL,
+    `id_vinted_photo` varchar(255) NOT NULL,
+    `full_size_url`   varchar(255) DEFAULT NULL,
+    `url`             varchar(255) DEFAULT NULL,
+    `is_main`         int(1) DEFAULT NULL,
+    `is_hidden`       int(1) DEFAULT NULL,
+    PRIMARY KEY (`id_photo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3134 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

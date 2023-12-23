@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
- SET NAMES utf8 ;
+SET NAMES utf8;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,27 +21,29 @@
 
 DROP TABLE IF EXISTS `product`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `product` (
-  `id_product` int(255) NOT NULL AUTO_INCREMENT,
-  `id_vinted` varchar(255) NOT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `description` longtext,
-  `brand` varchar(255) DEFAULT NULL,
-  `label` varchar(255) DEFAULT NULL,
-  `size` varchar(45) DEFAULT NULL,
-  `status` varchar(45) DEFAULT NULL,
-  `url` varchar(255) DEFAULT NULL,
-  `price` varchar(45) DEFAULT NULL,
-  `is_closed` int(1) DEFAULT NULL,
-  `is_reserved` int(1) DEFAULT NULL,
-  `is_hidden` int(1) DEFAULT NULL,
-  `is_visible` int(1) DEFAULT NULL,
-  `updated_at` datetime NOT NULL,
-  `created_at` datetime NOT NULL,
-  `to_sent` int(1) DEFAULT '1',
-  PRIMARY KEY (`id_product`),
-  KEY `id_vinted` (`id_vinted`,`id_product`,`size`,`is_reserved`,`is_closed`)
+SET
+character_set_client = utf8mb4 ;
+CREATE TABLE `product`
+(
+    `id_product`  int(255) NOT NULL AUTO_INCREMENT,
+    `id_vinted`   varchar(255) NOT NULL,
+    `title`       varchar(255) DEFAULT NULL,
+    `description` longtext,
+    `brand`       varchar(255) DEFAULT NULL,
+    `label`       varchar(255) DEFAULT NULL,
+    `size`        varchar(45)  DEFAULT NULL,
+    `status`      varchar(45)  DEFAULT NULL,
+    `url`         varchar(255) DEFAULT NULL,
+    `price`       varchar(45)  DEFAULT NULL,
+    `is_closed`   int(1) DEFAULT NULL,
+    `is_reserved` int(1) DEFAULT NULL,
+    `is_hidden`   int(1) DEFAULT NULL,
+    `is_visible`  int(1) DEFAULT NULL,
+    `updated_at`  datetime     NOT NULL,
+    `created_at`  datetime     NOT NULL,
+    `to_sent`     int(1) DEFAULT '1',
+    PRIMARY KEY (`id_product`),
+    KEY           `id_vinted` (`id_vinted`,`id_product`,`size`,`is_reserved`,`is_closed`)
 ) ENGINE=InnoDB AUTO_INCREMENT=327 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
