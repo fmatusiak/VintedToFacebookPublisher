@@ -1,16 +1,17 @@
 {
   "facebook": {
-    "name": "",
-    "id": "",
-    "token": ""
+    "name": "Your Facebook Page Name",
+    "id": "Your Facebook Page ID",
+    "token": "Your Facebook Access Token"
   },
   "vinted": {
-    "base_url_profile": "",
-    "member": ""
+    "base_url_profile": "Your Vinted Profile URL",
+    "member": "Your Vinted Member ID"
   },
-  "chrome_user_data_dir": "",
-  "dbHost": "",
-  "dbUser": "",
-  "dbPassword": "",
-  "dbName": ""
+  "chrome_user_data_dir": "Your Chrome User Data Directory",
+  "db_host": "Your Database Host",
+  "db_user": "Your Database User",
+  "db_password": "Your Database Password",
+  "db_name": "Your Database Name"
 }
+
