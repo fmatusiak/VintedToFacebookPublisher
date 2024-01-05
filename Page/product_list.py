@@ -2,7 +2,7 @@ import dateutil.parser as dt
 import pytz
 
 
-class ProductListPage:
+class ProductList:
     def __init__(self, driver, config):
         self.driver = driver
 

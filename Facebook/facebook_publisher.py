@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from Database.DBConnector import DBConnector
-from Facebook.FacebookApi import FacebookApi
+from Database.db_connector import DBConnector
+from Facebook.facebook_api import FacebookApi
 
 
 class FacebookPublisher:

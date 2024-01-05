@@ -1,10 +1,11 @@
 import sys
 
-from ConfigLoader import loadConfig
-from Facebook.FacebookPublisher import FacebookPublisher
-from ProductUpdater import ProductUpdater
+from Facebook.facebook_publisher import FacebookPublisher
+from config_loader import loadConfig
+from product_updater import ProductUpdater
 
-if __name__ == '__main__':
+
+def main():
     try:
         config = loadConfig()
 
@@ -19,3 +20,7 @@ if __name__ == '__main__':
 
     finally:
         sys.exit()
+
+
+if __name__ == '__main__':
+    main()

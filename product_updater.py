@@ -1,8 +1,8 @@
 import mysql.connector
 
-from Database.DBConnector import DBConnector
-from Page.ProductListPage import ProductListPage
-from SeleniumSession import SeleniumSession
+from Database.db_connector import DBConnector
+from Page.product_list import ProductList
+from selenium_session import SeleniumSession
 
 
 class ProductUpdater:
@@ -16,10 +16,10 @@ class ProductUpdater:
         try:
             seleniumSession.initializeWebDriver()
 
-            productListPage = ProductListPage(seleniumSession.getDriver(), self.config)
-            productListPage.open()
+            productList = ProductList(seleniumSession.getDriver(), self.config)
+            productList.open()
 
-            products = productListPage.getMyProducts()
+            products = productList.getMyProducts()
 
             for product in products:
                 product_exists = self.getProductByVintedId(product['id'])
